@@ -4,10 +4,12 @@
     height: 30px;
     width: 30px;
     border-radius: 20%;
-    background-color: #00b38f;
+    /* background-color: #00b38f; */
     box-shadow: 10px 5px grey;
     margin: 2px;
     transition: 200ms;
+    background-color: linear-gradient(-55deg, rgba(50,45,55,1) 0%, rgba(101,96,106,1) 100%);
+    
 }
 
 .Start{
@@ -21,7 +23,7 @@
 .Visited{
     background-color: #0F52BA;
     animation-name: visitedAnimation;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-delay: 0;
     animation-direction: alternate;
@@ -38,7 +40,7 @@
 .Short{
     background-color: yellow;
     animation-name: shortestPath;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-delay: 0;
     animation-direction: alternate;
@@ -49,7 +51,7 @@
 .Front{
     background-color: blueviolet;
     animation-name: frontAnimation;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-delay: 0;
     animation-direction: alternate;
@@ -66,6 +68,7 @@
     }
   
     50% {
+      transform: scale(0.7);
       background-color: peachpuff;
     }
   
@@ -83,16 +86,17 @@
   @keyframes shortestPath {
     0% {
       transform: scale(0.6);
+      transform: tra;
       background-color: rgb(63, 243, 78);
     }
   
     50% {
-      transform: scale(1.2);
+      transform: scale(1.4);
       background-color: rgb(63, 243, 78);
     }
   
     100% {
-      transform: scale(1);
+      transform: scale(0.8);
       background-color: rgb(63, 243, 78);
     }
   }

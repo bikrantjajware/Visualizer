@@ -37,7 +37,7 @@ export function Dijkstra(grid,start,finish,height,WIDTH){
         if(currNode.isWall) continue;
 
         pathInOrder.push(currNode)
-       // currNode.isVisited = true;
+       
 
         if(currNode === finish)
         {
@@ -45,7 +45,7 @@ export function Dijkstra(grid,start,finish,height,WIDTH){
         }
         const currRow = currNode.row;
         const currCol = currNode.col;
-        //console.log(`row=${currRow},col=${currCol}`);
+        
         const currDistance = currNode.distance;
         for(let i=0;i<4;i++)
         {
@@ -75,20 +75,9 @@ export function getShortestPath(grid,finish)
     while(finish!=null)
     {
         shortestPath.unshift(finish);
-        console.log(finish);
+       // console.log(finish);
         finish = finish.previous;
         
     }
     return shortestPath
 }
-// function getAllNodes(grid)
-// {
-//     const nodes = []
-//     console.log(grid);
-//     grid.forEach(row => {
-//         row.forEach( node => {
-//             nodes.push(node);
-//         })
-//     });
-//     return nodes;
-// }
